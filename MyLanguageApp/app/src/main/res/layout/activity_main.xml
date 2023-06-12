@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:id="@+id/bkgimg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/background_img"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/btnSchool"
+      android:layout_width="120dp"
+      android:layout_height="57dp"
+      android:layout_marginRight="61dp"
+      android:layout_marginBottom="88dp"
+      android:background="@drawable/button_layout"
+      android:text="SCHOOL"
+      app:layout_constraintBottom_toBottomOf="@+id/bkgimg"
+      app:layout_constraintRight_toRightOf="@+id/bkgimg"
+      tools:ignore="MissingConstraints" />
+
+  <Button
+      android:id="@+id/btnSync"
+      android:layout_width="120dp"
+      android:layout_height="57dp"
+      android:layout_marginLeft="61dp"
+      android:layout_marginBottom="88dp"
+      android:text="Synthetic"
+      android:background="@drawable/button2_layout"
+      app:layout_constraintBottom_toBottomOf="@+id/bkgimg"
+      app:layout_constraintLeft_toLeftOf="@+id/bkgimg"
+      tools:ignore="MissingConstraints" />
+
+  <ImageView
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="60dp"
+      android:src="@drawable/logo"
+      android:foregroundGravity="center_horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
